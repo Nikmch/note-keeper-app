@@ -1,3 +1,29 @@
+// NOTE KEEPER APP //
+
+A NOTE APP USING NEXT.JS, MONGODB, TYPESCRIPT, MONGOOSE AND TYPEGOOSE.
+
+A CRUD application
+Add a note
+Delete a note
+Update a note all stored on your MongoDB database.
+
+**// get your app up and by running //**
+
+npm install
+
+**// Run your local server //**
+
+npm run dev
+
+**// set up your database cluster at MongoDb atlas then add a variable in your .env.local //**
+
+MONGODB_URI= **// place your connection URI for your MongoDB atlas database here //**
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
