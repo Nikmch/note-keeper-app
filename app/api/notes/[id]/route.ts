@@ -47,8 +47,8 @@ export async function PATCH(
 
         const { note, error } = await UpdateNote(id, body);
 
-        if (!note) {
-            throw new Error;
+        if (error) {
+            throw error;
         
         }
 

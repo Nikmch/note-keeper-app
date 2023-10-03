@@ -88,13 +88,12 @@ export async function UpdateNote(
       .lean()
       .exec();
     console.log(note);
-    if (!note) {
-      return;
-      {
-        error: "Note not found";
-      }
+    if (note) {
+      return {
+        note,
+      };
     } else {
-      return { note };
+      return { error: "Note not found" };
     }
   } catch (error) {
     return { error };
