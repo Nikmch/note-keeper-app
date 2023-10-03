@@ -2,7 +2,7 @@
 import connectDB from "../../../../libs/connect-db";
 import { deleteNote, getNote, UpdateNote } from "../../../../libs/note-db";
 import { createErrorResponse } from "../../../../libs/utils";
-import { NextResponse } from "next/server";
+import { type NextResponse } from 'next/server';
 
 export async function GET(
     _request: Request,
@@ -24,7 +24,7 @@ export async function GET(
                 note,
             },
         };
-        return NextResponse.json(json_response);
+        return Response.json(json_response);
     } catch (error: any) {
         if (typeof error === "string" && error.includes("Note not found")) {
             return createErrorResponse("Note not found", 404);
@@ -58,7 +58,7 @@ export async function PATCH(
                 note,
             },
         };
-        return NextResponse.json(json_response);
+        return Response.json(json_response);
     } catch (error: any) {
         if (typeof error === "string" && error.includes("Note not found")) {
             return createErrorResponse("Note not found", 404);
@@ -82,7 +82,7 @@ export async function DELETE(
             throw error;
         }
 
-        return new NextResponse(null, { status: 204 });
+        return new Response(null, { status: 204 });
     } catch (error: any) {
         if (typeof error === "string" && error.includes("Note not found")) {
             return createErrorResponse("Note not found", 404);
