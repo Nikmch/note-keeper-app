@@ -51,8 +51,7 @@ header {
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
 }
 
@@ -73,7 +72,7 @@ footer p {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
+  width: 50%;
   margin: 16px;
   float: left;
 }
@@ -107,7 +106,7 @@ footer p {
 
 form.create-note {
   position: relative;
-  width: 480px;
+  width: 65%;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;

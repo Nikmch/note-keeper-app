@@ -7,8 +7,10 @@ export default async function Home() {
 
   return (
     <main>
-      <div>
+      <div >
+       
         <NoteFormServerComponent />
+      
         {results === 0 ? (
           <p className="text-center">No Notes Found</p>
         ) : (

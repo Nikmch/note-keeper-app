@@ -10,7 +10,7 @@ interface NoteItemProps {
 const NoteItem: React.FC<NoteItemProps> = ({ note }) => {
   return (
     <form className="flex items-center space-x-2 mb-2" key={note.id}>
-      <div className="note">
+      <div className="note w-1/4 sm:w-2/5 lg:w-1/3">
         <div>
           <div>
             <EditNote key={note.id} note={note} />

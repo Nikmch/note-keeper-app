@@ -19,7 +19,7 @@ export default async function CreateArea() {
   }
 
   return (
-    <div>
+    <div >
       <form action={action} key={Math.random()} className="create-note">
         <input key="index" type="text" name="title" placeholder="Title" />
 
