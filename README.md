@@ -7,6 +7,8 @@ Add a note
 Delete a note
 Update a note all stored on your MongoDB database.
 
+VISIT THE WORKING SITE HERE https://note-keeper-gzb2usk9v-nikmch.vercel.app/
+
 **// get your app up and by running //**
 
 npm install
